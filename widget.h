@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include "scene.h"
+#include "player.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -18,9 +19,23 @@ public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
 
+private slots:
+    void on_startGameButton_clicked();
+
+    void on_exitButton_clicked();
+
+    void on_pauseGameButton_clicked();
+
+    void on_confirmNameButton_clicked();
+
+    void on_confirmCarColorButton_clicked();
+
+    void on_leaderboardButton_clicked();
+
 private:
     Ui::Widget *ui;
 
     Scene *scene;
+    Player * player;
 };
 #endif // WIDGET_H

@@ -22,6 +22,8 @@ Widget::Widget(QWidget *parent)
 
     Player * player = new Player(QPixmap(":/images/car.png"));
     player->setPos(-600, 50);
+    player->setFlag(QGraphicsItem::ItemIsFocusable);
+    player->setFocus();
     scene->addItem(player);
 
     Enemy * enemy = new Enemy();
@@ -34,3 +36,40 @@ Widget::~Widget()
 {
     delete ui;
 }
+
+void Widget::on_startGameButton_clicked()
+{
+
+}
+
+void Widget::on_pauseGameButton_clicked()
+{
+
+}
+
+void Widget::on_leaderboardButton_clicked()
+{
+
+}
+
+void Widget::on_exitButton_clicked()
+{
+
+}
+
+
+
+
+void Widget::on_confirmNameButton_clicked()
+{
+
+}
+
+
+void Widget::on_confirmCarColorButton_clicked()
+{
+
+}
+
+
+
