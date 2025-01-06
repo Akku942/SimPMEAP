@@ -26,6 +26,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         res.qrc
         scene.h scene.cpp
         lines.h lines.cpp
+        player.h player.cpp
+        enemy.h enemy.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET SimPMEAP APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
